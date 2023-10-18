@@ -1,0 +1,12 @@
+<div style="display: flex;justify-content: center;align-items: center;top:20%">
+    <div *ngIf="!!itemSelected" class="grid-container">
+        <div class="grid-item"  >
+           <span><img src='{{itemSelected?.strImageSource}}' height="100" width="150" /></span><br/>
+           <span>Item : {{itemSelected?.strGlass}}</span>
+           <span>Category : {{itemSelected?.strCategory}}</span>
+           <span>Glass : {{itemSelected?.strGlass}}</span>
+           <span>Instructions : {{itemSelected?.strInstructions}}</span>
+        </div>
+    </div>
+
+</div>

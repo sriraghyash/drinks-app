@@ -1,0 +1,17 @@
+<div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+    <div>
+        <h3>Search By <span><input type="search" (keypress)="searchByType($event)" /> </span></h3>
+    </div>
+
+
+
+    <div style="display: flex;justify-content: center;align-items: center;top:20%">
+        <div *ngFor="let item of tempItemsData" class="grid-container">
+            <div class="grid-item"  (click)="selectItemToDisplay(item?.idDrink)">
+               <span><img [src]="item?.strImageSource" height="100" width="150" /></span><br/>
+               <span>{{item?.strGlass}}</span>
+            </div>
+        </div>
+
+    </div>
+</div>
